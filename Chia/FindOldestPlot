@@ -1,0 +1,40 @@
+$oldestPlotDate = Get-Date
+$oldestPlotText = ""
+$diskdrives = get-wmiobject Win32_DiskDrive | sort Index
+foreach ( $disk in $diskdrives ) {
+
+        $part_query = 'ASSOCIATORS OF {Win32_DiskDrive.DeviceID="' +
+                      $disk.DeviceID.replace('\','\\') +
+                      '"} WHERE AssocClass=Win32_DiskDriveToDiskPartition'
+ 
+        $partitions = @( get-wmiobject -query $part_query | 
+                         sort StartingOffset )
+        foreach ($partition in $partitions) {
+
+ 
+            $vol_query = 'ASSOCIATORS OF {Win32_DiskPartition.DeviceID="' +
+                         $partition.DeviceID +
+                         '"} WHERE AssocClass=Win32_LogicalDiskToPartition'
+            $volumes   = @(get-wmiobject -query $vol_query)
+ 
+           
+                    $uniqueid = Get-Partition -DiskNumber $disk.Index | Get-Volume | Select UniqueId 
+                    $uniqueVolume = Get-WmiObject win32_volume | Where { $_.deviceid -eq $uniqueid.UniqueId -and $_.name} | Select Name, FileSystem, Capacity, FreeSpace
+                    $fileCountText = ''
+                    
+                    if ($disk.Partitions -lt 2) {
+                        $fileCount = Get-ChildItem $uniqueVolume.Name -recurse -Filter *.plot  | Sort-Object -Property CreationTime | Select-Object -First 1
+                        Write-Host $uniqueVolume.Name $fileCount.Name ': ' $fileCount.LastWriteTime
+
+                        if ($fileCount.LastWriteTime -lt $oldestPlotDate)
+                        {
+                            $oldestPlotDate = $fileCount.LastWriteTime
+                            $oldestPlotText = "Oldest Plot File is: " + $uniqueVolume.Name + $fileCount.Name + ': ' + $fileCount.LastWriteTime
+                        }
+                    }
+ 
+                 }
+ 
+            } # end foreach vol
+ 
+ Write-Host $oldestPlotText
