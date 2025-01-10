@@ -11,16 +11,13 @@ foreach ( $disk in $diskdrives ) {
                          sort StartingOffset )
         foreach ($partition in $partitions) {
 
- 
             $vol_query = 'ASSOCIATORS OF {Win32_DiskPartition.DeviceID="' +
                          $partition.DeviceID +
                          '"} WHERE AssocClass=Win32_LogicalDiskToPartition'
             $volumes   = @(get-wmiobject -query $vol_query)
  
-           
                     $uniqueid = Get-Partition -DiskNumber $disk.Index | Get-Volume | Select UniqueId 
-                    $uniqueVolume = Get-WmiObject win32_volume | Where { $_.deviceid -eq $uniqueid.UniqueId -and $_.name} | Select Name, FileSystem, Capacity, FreeSpace
-                    $fileCountText = ''
+                    $uniqueVolume = Get-WmiObject win32_volume | Where { $_.deviceid -eq $uniqueid.UniqueId -and $_.name} | Select Name
                     
                     if ($disk.Partitions -lt 2) {
                         $fileCount = Get-ChildItem $uniqueVolume.Name -recurse -Filter *.plot  | Sort-Object -Property CreationTime | Select-Object -First 1
