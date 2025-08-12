@@ -1,7 +1,30 @@
 $oldestPlotDate = Get-Date
+$mostPowerOnHours = 0
 $oldestPlotText = ""
+$mostPowerOnHoursText = ""
 $diskdrives = get-wmiobject Win32_DiskDrive | sort Index
 foreach ( $disk in $diskdrives ) {
+
+
+
+        $SMARTData = Get-PhysicalDisk -DeviceNumber $disk.Index | Get-StorageReliabilityCounter | Select-Object -Property LoadUnloadCycleCount,PowerOnHours,Temperature
+
+        if ($SMARTData.PowerOnHours -gt $mostPowerOnHours)
+        {
+            $mostPowerOnHours = $SMARTData.PowerOnHours
+
+            $HerePowerOn = New-TimeSpan -Hours $SMARTData.PowerOnHours
+            $HereYears  = [Math]::Truncate($($HerePowerOn.Days) / 365)
+            $HereMonths = [Math]::Truncate($($HerePowerOn.Days) % 365 / 30.46)
+            $HereDays   = [Math]::Truncate($($HerePowerOn.Days) % 365 % 30.46)
+            $HereHours  = [Math]::Truncate($($HerePowerOn.Days) % 365 % 30.46 % 24)
+
+            $SMARTDetails = " ({0:0} Years, {1:0} Months, {2:0} Days, {3:0} Hours)" -f $HereYears,$HereMonths,$HereDays,$HereHours 
+
+            $mostPowerOnHoursText = "Most power on hours is: Drive " + $disk.Index + ': ' + $mostPowerOnHours + " - " + $SMARTDetails
+            
+        }
+
 
         $part_query = 'ASSOCIATORS OF {Win32_DiskDrive.DeviceID="' +
                       $disk.DeviceID.replace('\','\\') +
@@ -11,17 +34,20 @@ foreach ( $disk in $diskdrives ) {
                          sort StartingOffset )
         foreach ($partition in $partitions) {
 
+ 
             $vol_query = 'ASSOCIATORS OF {Win32_DiskPartition.DeviceID="' +
                          $partition.DeviceID +
                          '"} WHERE AssocClass=Win32_LogicalDiskToPartition'
             $volumes   = @(get-wmiobject -query $vol_query)
  
+           
                     $uniqueid = Get-Partition -DiskNumber $disk.Index | Get-Volume | Select UniqueId 
-                    $uniqueVolume = Get-WmiObject win32_volume | Where { $_.deviceid -eq $uniqueid.UniqueId -and $_.name} | Select Name
+                    $uniqueVolume = Get-WmiObject win32_volume | Where { $_.deviceid -eq $uniqueid.UniqueId -and $_.name} | Select Name, FileSystem, Capacity, FreeSpace
+                    $fileCountText = ''
                     
                     if ($disk.Partitions -lt 2) {
                         $fileCount = Get-ChildItem $uniqueVolume.Name -recurse -Filter *.plot  | Sort-Object -Property CreationTime | Select-Object -First 1
-                        Write-Host $uniqueVolume.Name $fileCount.Name ': ' $fileCount.LastWriteTime
+                        Write-Host $uniqueVolume.Name$fileCount.Name': '$fileCount.LastWriteTime
 
                         if ($fileCount.LastWriteTime -lt $oldestPlotDate)
                         {
@@ -35,3 +61,4 @@ foreach ( $disk in $diskdrives ) {
             } # end foreach vol
  
  Write-Host $oldestPlotText
+ Write-Host $mostPowerOnHoursText
