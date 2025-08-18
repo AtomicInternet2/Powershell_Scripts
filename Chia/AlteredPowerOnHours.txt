@@ -1,0 +1,202 @@
+PS C:\status> .\GetPowerOnStats.ps1
+\\.\PhysicalDrive1 - ST8000DM004-2CX188 - ZR10TDT4 - 0001 - ATA
+ Power-On Hours                                               N/A              31284 hours
+ Spindle Motor Power-On Hours                                 N/A              504767249 hours
+ Head Flying Hours                                            N/A              504767032 hours
+\\.\PhysicalDrive2 - ST18000NM000J-2TV103 - ZR52VZ04 - SN06 - ATA
+ Power-On Hours                                               N/A              23177 hours
+ Spindle Motor Power-On Hours                                 N/A              22992 hours
+ Head Flying Hours                                            N/A              22828 hours
+\\.\PhysicalDrive3 - ST18000NM000J-2TV103 - ZR53LMMK - SN06 - ATA
+ Power-On Hours                                               N/A              20834 hours
+ Spindle Motor Power-On Hours                                 N/A              20500 hours
+ Head Flying Hours                                            N/A              20418 hours
+\\.\PhysicalDrive4 - ST18000NM003D-3DL103 - ZVT0RVW6 - SN06 - ATA
+ Power-On Hours                                               N/A              20618 hours
+ Spindle Motor Power-On Hours                                 N/A              20376 hours
+ Head Flying Hours                                            N/A              20302 hours
+\\.\PhysicalDrive5 - ST30000NM004K-3RM133 - K1S05NZS - SE02 - ATA
+ Power-On Hours                                               N/A              2200 hours
+ Spindle Motor Power-On Hours                                 N/A              2159 hours
+ Head Flying Hours                                            N/A              2159 hours
+\\.\PhysicalDrive6 - ST30000NM004K-3RM133 - K1S04WVG - SE02 - ATA
+ Power-On Hours                                               N/A              851 hours
+ Spindle Motor Power-On Hours                                 N/A              818 hours
+ Head Flying Hours                                            N/A              818 hours
+\\.\PhysicalDrive7 - ST18000NM002J-2TV133 - ZR5A3C9A - PALB - ATA
+ Power-On Hours                                               N/A              15450 hours
+ Spindle Motor Power-On Hours                                 N/A              15117 hours
+ Head Flying Hours                                            N/A              14977 hours
+\\.\PhysicalDrive8 - OOS18000G - 000AR6YP - OOS1 - ATA
+ Power-On Hours                                               N/A              15884 hours
+ Spindle Motor Power-On Hours                                 N/A              15741 hours
+ Head Flying Hours                                            N/A              15734 hours
+\\.\PhysicalDrive9 - ST18000NM000J-2TV103 - ZR5AASCY - SN06 - ATA
+ Power-On Hours                                               N/A              15416 hours
+ Spindle Motor Power-On Hours                                 N/A              15103 hours
+ Head Flying Hours                                            N/A              15059 hours
+\\.\PhysicalDrive10 - ST18000NM003D-3DL103 - ZVT0RSVR - SN06 - ATA
+ Power-On Hours                                               N/A              18783 hours
+ Spindle Motor Power-On Hours                                 N/A              16754 hours
+ Head Flying Hours                                            N/A              16427 hours
+\\.\PhysicalDrive11 - ST18000NM000J-2TV103 - ZR5CRN5N - SN06 - ATA
+ Power-On Hours                                               N/A              19517 hours
+ Spindle Motor Power-On Hours                                 N/A              19334 hours
+ Head Flying Hours                                            N/A              19282 hours
+\\.\PhysicalDrive12 - ST18000NM003D-3DL103 - ZVT17PZS - SN06 - ATA
+ Power-On Hours                                               N/A              19110 hours
+ Spindle Motor Power-On Hours                                 N/A              18924 hours
+ Head Flying Hours                                            N/A              18872 hours
+\\.\PhysicalDrive13 - ST18000NM000J-2TV103 - ZR55XH51 - SN06 - ATA
+ Power-On Hours                                               N/A              23081 hours
+ Spindle Motor Power-On Hours                                 N/A              22803 hours
+ Head Flying Hours                                            N/A              22662 hours
+\\.\PhysicalDrive14 - ST18000NM000J-2TV103 - ZR5AATL6 - SN06 - ATA
+ Power-On Hours                                               N/A              15425 hours
+ Spindle Motor Power-On Hours                                 N/A              15102 hours
+ Head Flying Hours                                            N/A              15036 hours
+\\.\PhysicalDrive15 - ST18000NM000J-2TV103 - ZR50TXY7 - SN06 - ATA
+ Power-On Hours                                               N/A              20131 hours
+ Spindle Motor Power-On Hours                                 N/A              18209 hours
+ Head Flying Hours                                            N/A              17856 hours
+\\.\PhysicalDrive16 - ST18000NM000J-2TV103 - ZR50TY1R - SN06 - ATA
+ Power-On Hours                                               N/A              20133 hours
+ Spindle Motor Power-On Hours                                 N/A              19546 hours
+ Head Flying Hours                                            N/A              19436 hours
+\\.\PhysicalDrive17 - ST18000NM000J-2TV103 - ZR55MNP0 - SN06 - ATA
+ Power-On Hours                                               N/A              22318 hours
+ Spindle Motor Power-On Hours                                 N/A              22115 hours
+ Head Flying Hours                                            N/A              22023 hours
+\\.\PhysicalDrive18 - Dock Disk 1 - 10A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              15234 hours
+ Spindle Motor Power-On Hours                                 N/A              14999 hours
+ Head Flying Hours                                            N/A              14901 hours
+\\.\PhysicalDrive19 - Dock Disk 5 - 50A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              14059 hours
+ Spindle Motor Power-On Hours                                 N/A              13818 hours
+ Head Flying Hours                                            N/A              13741 hours
+\\.\PhysicalDrive20 - Dock Disk 4 - 40A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              14726 hours
+ Spindle Motor Power-On Hours                                 N/A              14479 hours
+ Head Flying Hours                                            N/A              14398 hours
+\\.\PhysicalDrive21 - Dock Disk 3 - 30A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              13777 hours
+ Spindle Motor Power-On Hours                                 N/A              13573 hours
+ Head Flying Hours                                            N/A              13572 hours
+\\.\PhysicalDrive22 - Dock Disk 2 - 20A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              14871 hours
+ Spindle Motor Power-On Hours                                 N/A              14466 hours
+ Head Flying Hours                                            N/A              14374 hours
+\\.\PhysicalDrive23 - G - D8000216DB21 - 0 - ATA
+ Power-On Hours                                               N/A              15118 hours
+ Spindle Motor Power-On Hours                                 N/A              14797 hours
+ Head Flying Hours                                            N/A              14796 hours
+\\.\PhysicalDrive24 - M000J-2TV103 - D8000216DB21 - 0 - ATA
+ Power-On Hours                                               N/A              15393 hours
+ Spindle Motor Power-On Hours                                 N/A              15125 hours
+ Head Flying Hours                                            N/A              15092 hours
+\\.\PhysicalDrive25 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              13497 hours
+ Spindle Motor Power-On Hours                                 N/A              13319 hours
+ Head Flying Hours                                            N/A              13260 hours
+\\.\PhysicalDrive26 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              13476 hours
+ Spindle Motor Power-On Hours                                 N/A              13306 hours
+ Head Flying Hours                                            N/A              13248 hours
+\\.\PhysicalDrive27 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15561 hours
+ Spindle Motor Power-On Hours                                 N/A              15409 hours
+ Head Flying Hours                                            N/A              15407 hours
+\\.\PhysicalDrive28 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15714 hours
+ Spindle Motor Power-On Hours                                 N/A              15461 hours
+ Head Flying Hours                                            N/A              15459 hours
+\\.\PhysicalDrive29 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15532 hours
+ Spindle Motor Power-On Hours                                 N/A              15364 hours
+ Head Flying Hours                                            N/A              15363 hours
+\\.\PhysicalDrive30 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15652 hours
+ Spindle Motor Power-On Hours                                 N/A              15421 hours
+ Head Flying Hours                                            N/A              15419 hours
+\\.\PhysicalDrive31 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15760 hours
+ Spindle Motor Power-On Hours                                 N/A              15577 hours
+ Head Flying Hours                                            N/A              15575 hours
+\\.\PhysicalDrive32 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15921 hours
+ Spindle Motor Power-On Hours                                 N/A              15689 hours
+ Head Flying Hours                                            N/A              15687 hours
+\\.\PhysicalDrive33 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              16003 hours
+ Spindle Motor Power-On Hours                                 N/A              15833 hours
+ Head Flying Hours                                            N/A              15829 hours
+\\.\PhysicalDrive34 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              16133 hours
+ Spindle Motor Power-On Hours                                 N/A              15882 hours
+ Head Flying Hours                                            N/A              15879 hours
+\\.\PhysicalDrive35 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              12825 hours
+ Spindle Motor Power-On Hours                                 N/A              12649 hours
+ Head Flying Hours                                            N/A              12648 hours
+\\.\PhysicalDrive36 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              12836 hours
+ Spindle Motor Power-On Hours                                 N/A              12683 hours
+ Head Flying Hours                                            N/A              12681 hours
+\\.\PhysicalDrive37 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15825 hours
+ Spindle Motor Power-On Hours                                 N/A              15630 hours
+ Head Flying Hours                                            N/A              15487 hours
+\\.\PhysicalDrive38 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              16366 hours
+ Spindle Motor Power-On Hours                                 N/A              16151 hours
+ Head Flying Hours                                            N/A              16149 hours
+\\.\PhysicalDrive39 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15337 hours
+ Spindle Motor Power-On Hours                                 N/A              15052 hours
+ Head Flying Hours                                            N/A              14949 hours
+\\.\PhysicalDrive40 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15303 hours
+ Spindle Motor Power-On Hours                                 N/A              15037 hours
+ Head Flying Hours                                            N/A              14943 hours
+\\.\PhysicalDrive41 - Dock Disk 1 - 10A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              13949 hours
+ Spindle Motor Power-On Hours                                 N/A              13687 hours
+ Head Flying Hours                                            N/A              13637 hours
+\\.\PhysicalDrive42 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15075 hours
+ Spindle Motor Power-On Hours                                 N/A              14587 hours
+ Head Flying Hours                                            N/A              14586 hours
+\\.\PhysicalDrive43 - USB 3.0 Destop H - 00000000000000000000 - 0 - ATA
+ Power-On Hours                                               N/A              15491 hours
+ Spindle Motor Power-On Hours                                 N/A              15209 hours
+ Head Flying Hours                                            N/A              15145 hours
+\\.\PhysicalDrive44 - OOS18000G - 00093AEH - OOS1 - ATA
+ Power-On Hours                                               N/A              13030 hours
+ Spindle Motor Power-On Hours                                 N/A              12866 hours
+ Head Flying Hours                                            N/A              12865 hours
+\\.\PhysicalDrive45 - Dock Disk 5 - 50A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              15222 hours
+ Spindle Motor Power-On Hours                                 N/A              14825 hours
+ Head Flying Hours                                            N/A              14743 hours
+\\.\PhysicalDrive46 - Dock Disk 4 - 40A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              14139 hours
+ Spindle Motor Power-On Hours                                 N/A              13711 hours
+ Head Flying Hours                                            N/A              13618 hours
+\\.\PhysicalDrive47 - Dock Disk 2 - 20A000005525 - 0 - ATA
+ Power-On Hours                                               N/A              15443 hours
+ Spindle Motor Power-On Hours                                 N/A              15068 hours
+ Head Flying Hours                                            N/A              14965 hours
+\\.\PhysicalDrive48 - OOS18000G - 000AEZDQ - OOS1 - ATA
+ Power-On Hours                                               N/A              12959 hours
+ Spindle Motor Power-On Hours                                 N/A              12402 hours
+ Head Flying Hours                                            N/A              12400 hours
+\\.\PhysicalDrive49 - ST18000NM000J-2TV103 - ZR5850WV - SN06 - ATA
+ Power-On Hours                                               N/A              20950 hours
+ Spindle Motor Power-On Hours                                 N/A              20734 hours
+ Head Flying Hours                                            N/A              20632 hours
+\\.\PhysicalDrive50 - ST18000NM000J-2TV103 - ZR56B8QY - SN06 - ATA
+ Power-On Hours                                               N/A              20958 hours
+ Spindle Motor Power-On Hours                                 N/A              20755 hours
+ Head Flying Hours                                            N/A              20633 hours
+PS C:\status>
